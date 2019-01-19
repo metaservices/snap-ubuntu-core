@@ -1,21 +1,21 @@
-name: wethr
+name: wethrsnap
 version: git
 summary: Command line weather tool.
 description: >
   Get current weather:-
-    $ wethr
+    $ wethrsnap
   Get current weather in metric units
-    $ wethr --metric
+    $ wethrsnap --metric
   Get current weather in imperial units
-    $ wethr --imperial
+    $ wethrsnap --imperial
 
 confinement: devmode
 
 parts:
-  wethr:
+  wethrsnap:
     plugin: nodejs
     source: .
 
 apps:
-  wethr:
-    command: wethr
+  wethrsnap:
+    command: wethrsnap
